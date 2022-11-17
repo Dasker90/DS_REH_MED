@@ -3,4 +3,4 @@ C# / Python / SQL Server / Data / GUI / MVMV / Xamarin
 
 APLIKACJA NA URZADZENIA MOBILNE ORAZ STACJONARNE O ZASTOSOWANIU MEDYCZNO-REHABILITACYJNYM!!
 
-[Uploading bandicam 2022-11-17 19-49-50-961.jpg…]()
+https://github.com/Dasker90/DS_REH_MED/blob/main/bandicam%202022-11-17%2019-49-50-961.jpg?raw=true
