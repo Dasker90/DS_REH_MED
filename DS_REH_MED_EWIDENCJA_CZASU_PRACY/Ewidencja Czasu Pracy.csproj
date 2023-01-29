@@ -2,16 +2,7 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EB47C19D-E739-4448-A722-07AD2E7D4D39}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>Ewidencja_Czasu_Pracy</RootNamespace>
-    <AssemblyName>Ewidencja Czasu Pracy</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
+   
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -54,18 +45,7 @@
     <Reference Include="iTextSharp, Version=4.1.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
       <HintPath>packages\iTextSharp-LGPL.4.1.6\lib\iTextSharp.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.IO.Compression" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
+  
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Lista_Obecnosci.cs">
@@ -126,77 +106,7 @@
     <EmbeddedResource Include="Wnioski.resx">
       <DependentUpon>Wnioski.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="packages.config" />
-    <None Include="Properties\DataSources\Ewidencja_Czasu_Pracy.Properties.Resources.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.CellRange.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.Core.NumberFormat.NumberFormatString.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.ExcelDataReaderExtensions.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.ExcelDataSetConfiguration.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.ExcelDataTableConfiguration.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.ExcelReaderConfiguration.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.ExcelReaderFactory.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.Exceptions.CompoundDocumentException.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.Exceptions.ExcelReaderException.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.Exceptions.HeaderException.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.Exceptions.InvalidPasswordException.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.HeaderFooter.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.IExcelDataReader.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.Log.ILog.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.Log.ILogFactory.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.Log.Log.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.Log.Logger.NullLogFactory.datasource" />
-    <None Include="Properties\DataSources\ExcelDataReader.Log.LogManager.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Abstractions.CellValueMapperResult+HandleAction.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Abstractions.CellValueMapperResult.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Abstractions.ICellValueMapper.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Abstractions.ICellValueTransformer.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Abstractions.IFallbackItem.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Abstractions.IMultipleCellValuesReader.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Abstractions.ISingleCellValueReader.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Abstractions.IValuePipeline.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Abstractions.ReadCellValueResult.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.ExcelClassMap.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.ExcelColumnIndexAttribute.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.ExcelColumnNameAttribute.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.ExcelHeading.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.ExcelIgnoreAttribute.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.ExcelImporter.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.ExcelImporterConfiguration.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.ExcelImporterUtils.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.ExcelMappingException.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.ExcelPropertyMap.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.ExcelPropertyMapCollection.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.ExcelSheet.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Fallbacks.FixedValueFallback.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Fallbacks.ThrowFallback.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.IMap.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.IValuePipelineExtensions.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Mappers.BoolMapper.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Mappers.ChangeTypeMapper.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Mappers.ConvertUsingMapper.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Mappers.ConvertUsingMapperDelegate.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Mappers.DateTimeMapper.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Mappers.EnumMapper.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Mappers.GuidMapper.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Mappers.StringMapper.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Mappers.UriMapper.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.MemberSetValueDelegate.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.OneToOneMapExtensions.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Readers.AllColumnNamesValueReader.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Readers.CharSplitCellValueReader.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Readers.ColumnIndexValueReader.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Readers.ColumnNameMatchingValueReader.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Readers.ColumnNameValueReader.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Readers.MultipleColumnIndicesValueReader.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Readers.MultipleColumnNamesValueReader.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Readers.SplitCellValueReader.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Readers.StringSplitCellValueReader.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Transformers.TrimCellValueTransformer.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Utilities.AutoMapper.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.Utilities.QuoteJoinStrings.datasource" />
-    <None Include="Properties\DataSources\ExcelMapper.ValuePipeline.datasource" />
-    <None Include="Properties\DataSources\ExcelNumberFormat.NumberFormat.datasource" />
-    <None Include="Properties\Settings.settings">
+  
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
